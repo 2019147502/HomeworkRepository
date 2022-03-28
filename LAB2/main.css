@@ -1,6 +1,6 @@
-background color, text-align, padding, margin, border, font-size, font-family, color, width, height
+* { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 
-* { font-family:'Times New Roman', Times, serif;}
+h1 {font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 
 nav {margin: 10px; padding:10px;}
 
@@ -11,10 +11,11 @@ section {margin-top:10px;
 
 label {display:inline-block; width: 250px; text-align: center;}
 
-input[type="submit"] {background-color: red; height: 30px; border:1px solid black; font-size:12px; width:60px;
-                        margin-left:80px; color: white;}
+input[type="submit"] {background-color: red; height: 30px; border: none; font-size:12px; width:60px;
+                        margin-left:80px; color: white; border-radius: 5px;}
+input[type="reset"] {background-color:blueviolet; height:30px; border: none; font-size:12px; width:60px; color:white; border-radius: 5px;}
 
-span.current {border-top:1px solid red; border-bottom:1px solid red; }
+span.current {padding-top:5px; padding-bottom:5px; border-top:1px solid red; border-bottom:1px solid red; }
 
 .required {font-weight:bold;}
 
@@ -24,5 +25,5 @@ p.preference {margin-top:20px; border-top:2px dotted gray; padding-top:20px;
 p input + div {display:inline-block; height: 30px;}
 
 a.login {text-decoration: none;}
-a.signup {display:inline-block; height:30px; border: 1px solid black; background-color: rgb(19, 71, 32); text-decoration: none; 
-                font-size:12px; width:60px; text-align: center; vertical-align: middle; color: white;}
+a.signup {display:inline-block; height:30px; border: none; background-color: rgb(19, 71, 32); text-decoration: none; 
+                font-size:12px; width:60px; text-align: center; vertical-align: middle; color: white; border-radius: 5px;}
