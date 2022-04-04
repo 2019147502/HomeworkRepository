@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <title>IP Online Shop - signup</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+    </head>
+    <body>
+        <h1 >Welcome to INTERNET-PROGRAMMING Online Shop</h1>
+        <nav>
+            <a href="index.html">메인페이지</a>
+            <a class="login" href="login.html">로그인</a>
+            <span class="current">회원가입</span>
+        </nav>
+
+        <div class="main">
+            <div class="required">개인정보(필수)</div>
+            <form method="post" action="#">
+                <p><label>이름: </label><input type="text" placeholder="이름을 입력하세요" autofocus required></p>
+                <p><label>생년월일: </label><input type="date" required></p>
+                <p><label>전화번호: </label><input type="tel" pattern="\d{3}-\d{4}-\d{4}" placeholder="000-0000-0000" required></p>
+                <p><label>이메일: </label><input type="email" placeholder="name@domain.com" required></p>
+                <p><label>아이디: </label><input type="text" placeholder="아이디를 입력하세요" required></p>
+                <p><label>비밀번호: </label><input type="password" placeholder="비밀번호를 입력하세요" required></p>
+                <p><label>비밀번호 확인: </label><input type="password" placeholder="비밀번호 확인" required></p>
+                
+                <p class="preference">개인취향 조사 (더욱 정확한 추천을 받을 수 있습니다.)</p>
+                <p><label>좋아하는 색깔: </label><input type="color"></p>
+                <p><label>좋아하는 숫자(0~100): </label><input type="number" min=0 max=100></p>
+                <p><label>주로 공부하는 시간(10분 단위): </label><input type="time" step="600"></p>
+                
+                <p>
+                    <input type="submit" value="회원가입">
+                    <input type="reset" value="초기화">
+                </p>
+    
+            </form>
+        </div>
+
+    </body>
+</html>
