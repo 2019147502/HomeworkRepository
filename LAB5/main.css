@@ -59,6 +59,7 @@ section h2 {
         line-height: 1rem;
         padding-top: 0.3rem;
         top: 20px;
+        display: none;
 }
 
 section p {
@@ -70,6 +71,7 @@ section p {
         position: absolute;
         top: 50px;
         z-index: 2000;
+        display: none;
 }
 
 div.intro {
