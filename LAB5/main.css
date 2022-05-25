@@ -28,22 +28,52 @@ div#aside{
 }
 
 div#main{
-        display:flex;
-        flex-direction: column;
-}
-
-div.recommand {
-        display:flex;
-        flex-direction: column;
-        margin-top:20px;
-        border-top:2px solid black;
-}
-
-div.img_container{
-        display:flex;
-        flex-direction: row;
-        flex-wrap:wrap;
+        width: 740px;
+        display: flex;
+        flex-flow: row wrap;
         justify-content: space-around;
+}
+
+section {
+        width: 45%;
+        margin: 5px;
+        position: relative;
+        height: 215px;
+}
+
+section img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+}
+
+section h2 {
+        font-size: 2rem;
+        color: yellow;
+        text-align: right;
+        width: 160px;
+        position: absolute;
+        right: 4%;
+        z-index: 3000;
+        text-shadow: 2px 2px 1px black;
+        line-height: 2rem;
+        padding-top: 0.3rem;
+}
+
+section p {
+        color: yellow;
+        background: black;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 2px 2px 1px yellow;
+        position: absolute;
+        right: 10px;
+        bottom: -6px;
+        z-index: 2000;
 }
 
 div.intro {
@@ -57,43 +87,7 @@ div.intro {
 
 h3 {text-align: center;}
 
-div.img {
-        display:flex; 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 25%;
-        max-width: 25%;
-        margin-bottom:10px;
-        border-radius: 20px;
-}
-
-img{
-        
-        width:80%; height: 60%;
-        border-radius: 14px;
-        transition:transform 1s;
-}
-
-img:hover{
-        transform:scale(1.2,1.2);
-}
-
-@media (max-width: 800px){
-        h1 {font-size: 30px;}
-        .nav {flex:100%; text-align: center;}
-        div.img { flex: 50%; max-width: 50%;}
-}
-
-@media (max-width: 480px){
-        h1 {font-size: 20px;}
-        .nav {flex:100%; text-align: center;}
-        div.img{flex:100%; max-width:100%;}
-
-}
-
 label {display:inline-block; width: 120px; text-align: center;}
-label.img-tag {width:100%; color: #a2a2a2; z-index: 0;}
 
 input[type="submit"] {background-color: red; height: 30px; border: none; font-size:12px; width:60px;
                         margin-left:80px; color: white; border-radius: 5px;}
