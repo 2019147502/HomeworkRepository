@@ -138,10 +138,10 @@ function initialize(products) {
   }
 
   function description(e){
-    if(e.target.classList.contain('description')){
-      e.target.classList.remove('description');
+    if(e.classList.contain('description')){
+      e.classList.remove('description');
     }else{
-      e.target.classList.add('description');
+      e.classList.add('description');
     }
   }
 }
