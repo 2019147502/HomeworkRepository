@@ -17,14 +17,12 @@ function initialize(products) {
   let lastCategory = category.value;
   let lastSearch = '';
 
-  let categoryGroup;
   let finalGroup;
   let onDisplay = [];
 
   finalGroup = products;
   updateDisplay();
 
-  categoryGroup = [];
   finalGroup = [];
 
   searchBtn.addEventListener('click', selectCategory);
@@ -36,7 +34,6 @@ function initialize(products) {
     // the experience
     e.preventDefault();
 
-    categoryGroup = [];
     finalGroup = [];
 
     // if the category and search term are the same as they were the last time a
@@ -48,16 +45,11 @@ function initialize(products) {
       // update the record of last category and search term
       lastCategory = category.value;
       lastSearch = searchTerm.value.trim();
-      // In this case we want to select all products, then filter them by the search
-      // term, so we just set categoryGroup to the entire JSON object, then run selectProducts()
       if (category.value === 'All') {
-        categoryGroup = products;
+        finalGroup = products;
         updateDisplay();
-      // If a specific category is chosen, we need to filter out the products not in that
-      // category, then put the remaining products inside categoryGroup, before running
-      // selectProducts()
       } else {
-        categoryGroup = products.filter( product => product.type === category.value );
+        finalGroup = products.filter( product => product.type === category.value );
 
         updateDisplay();
       }

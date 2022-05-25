@@ -47,7 +47,8 @@ section img {
         width: 200px; height: 200px;
         display: block;
         position: absolute;
-        bottom: 0px;
+        left: 30px;
+        bottom: 30px;
 }
 
 section h2 {
