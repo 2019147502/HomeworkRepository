@@ -70,12 +70,12 @@ section p{
         display: none;
 }
 
-section.description img {
+section[class='description'] img {
         filter: brightness(50%);
 }
 
 
-section.description h2 {
+section[class='description'] h2 {
         font-size: 1rem;
         color: yellow;
         text-align: center;
@@ -89,7 +89,7 @@ section.description h2 {
         display:block;
 }
 
-section.description p {
+section[class='description'] p {
         color: yellow;
         background: black;
         width: 50px;

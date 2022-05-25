@@ -14,9 +14,6 @@ function initialize(products) {
   const searchBtn = document.querySelector('button');
   const main = document.getElementById('main');
 
-  let lastCategory = category.value;
-  let lastSearch = '';
-
   let categoryGroup;
   let finalGroup;
   let onDisplay = [];
@@ -66,7 +63,8 @@ function initialize(products) {
     // for each product we want to display, pass its product object to fetchBlob()
     } else {
       if (finalGroup.length < 6) {
-        for (let i = 0;i<finalGroup.length;i++) {
+        const l = finalGroup.length;
+        for (let i = 0;i<l;i++) {
           const product = finalGroup.shift();
           fetchBlob(product);
         }
@@ -129,7 +127,8 @@ function initialize(products) {
   function infiniteScroll(){
       if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
         if (finalGroup.length < 6) {
-          for (let i = 0;i<finalGroup.length;i++) {
+          const l = finalGroup.length;
+          for (let i = 0;i<l;i++) {
             const product = finalGroup.shift();
             fetchBlob(product);
           }
