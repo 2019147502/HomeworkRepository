@@ -117,8 +117,8 @@ function initialize(products) {
     // give the <section> a classname equal to the product "type" property so it will display the correct icon
     section.setAttribute('class', product.type);
 
-    title.textContent = product.name;
-    price.textContent = `$${product.price.toFixed(2)}`;
+    title.textContent = 'name: '+product.name;
+    price.textContent = 'price:'+`$${product.price.toFixed(2)}`;
 
     image.src = objectURL;
     image.alt = product.name;
