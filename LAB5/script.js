@@ -23,7 +23,7 @@ function initialize(products) {
 
   searchBtn.addEventListener('click', selectCategory);
   window.onscroll = infiniteScroll();
-  onDisplay.forEach(toggle(section));
+  onDisplay.forEach(toggle);
 
   function selectCategory(e) {
     e.preventDefault();
