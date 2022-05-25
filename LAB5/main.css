@@ -70,8 +70,7 @@ section h2 {
         position: absolute;
         z-index: 3000;
         text-shadow: 2px 2px 1px black;
-        line-height: 1rem;
-        padding-top: 0.3rem;
+        line-height: 2em;
         top: 20px;
         display:none;
 }
