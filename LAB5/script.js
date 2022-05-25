@@ -19,7 +19,7 @@ function initialize(products) {
 
   let categoryGroup;
   let finalGroup;
-  let count = 0;
+  let onDisplay = [];
 
   finalGroup = products;
   updateDisplay();
@@ -29,6 +29,7 @@ function initialize(products) {
 
   searchBtn.addEventListener('click', selectCategory);
   window.onscroll = infiniteScroll();
+  onDisplay.forEach(toggle(section));
 
   function selectCategory(e) {
     // Use preventDefault() to stop the form submitting — that would ruin
@@ -116,24 +117,18 @@ function initialize(products) {
     // give the <section> a classname equal to the product "type" property so it will display the correct icon
     section.setAttribute('class', product.type);
 
-    // Give the <h2> textContent equal to the product "name" property, but with the first character
-    // replaced with the uppercase version of the first character
     title.textContent = product.name;
-
-    // Give the <p> textContent equal to the product "price" property, with a $ sign in front
-    // toFixed(2) is used to fix the price at 2 decimal places, so for example 1.40 is displayed
-    // as 1.40, not 1.4.
     price.textContent = `$${product.price.toFixed(2)}`;
 
-    // Set the src of the <img> element to the ObjectURL, and the alt to the product "name" property
     image.src = objectURL;
     image.alt = product.name;
 
-    // append the elements to the DOM as appropriate, to add the product to the UI
     main.appendChild(section);
     section.appendChild(title);
     section.appendChild(price);
     section.appendChild(image);
+
+    onDisplay.push(section);
   }
 
   function infiniteScroll(){
@@ -150,5 +145,21 @@ function initialize(products) {
           }
         }
       }
+  }
+
+  function toggle(section){
+    section.onclick = function(){
+      if(section.classList.contain("description")){
+        section.querySelector('img').style.filter = 'none';
+        section.querySelector('h2').style.display = 'none';
+        section.querySelector('p').style.display = 'none';
+        section.classList.remove("description");
+      }else{
+        section.querySelector('img').style.filter = 'brightness(50%)';
+        section.querySelector('h2').style.display = 'block';
+        section.querySelector('p').style.display = 'block';
+        section.classList.add("description");
+      }
+    }
   }
 }
