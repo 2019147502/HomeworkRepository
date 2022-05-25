@@ -22,7 +22,22 @@ function initialize(products) {
   updateDisplay();
 
   searchBtn.addEventListener('click', selectCategory);
-  window.onscroll = infiniteScroll();
+  window.onscroll = () => {
+    if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
+      if (finalGroup.length < 6) {
+        const l = finalGroup.length;
+        for (let i = 0;i<l;i++) {
+          const product = finalGroup.shift();
+          fetchBlob(product);
+        }
+      } else {
+        for (let i = 0;i<6;i++) {
+          const product = finalGroup.shift();
+          fetchBlob(product);
+        }
+      }
+    }
+  }
   onDisplay.forEach(function(element){
     element.onclick = function(){
       if(element.classList.contain("description")){

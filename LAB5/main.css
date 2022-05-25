@@ -46,7 +46,7 @@ div#main{
 }
 
 section {
-        width: 45%; height: 215px;
+        width: 45%; height: 300px;
         margin: 5px;
         position: relative;
         background-color: black;
@@ -54,11 +54,11 @@ section {
 }
 
 section img {
-        width: 200px; height: 200px;
+        width: 300px; height: 300px;
         display: block;
         position: absolute;
-        left: 50px;
-        bottom: 5px;
+        left: 5px;
+        bottom: 0px;
         filter:none;
 }
 
