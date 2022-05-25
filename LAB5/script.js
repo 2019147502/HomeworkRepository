@@ -23,7 +23,15 @@ function initialize(products) {
 
   searchBtn.addEventListener('click', selectCategory);
   window.onscroll = infiniteScroll();
-  onDisplay.forEach(toggle);
+  onDisplay.forEach(function toggle(element){
+    element.onclick = function(){
+      if(element.classList.contain("description")){
+        element.classList.remove("description");
+      }else{
+        element.classList.add("description");
+      }
+    }
+  });
 
   function selectCategory(e) {
     e.preventDefault();
@@ -141,13 +149,5 @@ function initialize(products) {
       }
   }
 
-  function toggle(section){
-    section.onclick = function(){
-      if(section.classList.contain("description")){
-        section.classList.remove("description");
-      }else{
-        section.classList.add("description");
-      }
-    }
-  }
+
 }
