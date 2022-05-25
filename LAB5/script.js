@@ -40,6 +40,7 @@ function initialize(products) {
   }
   onDisplay.forEach(function(element){
     element.onclick = function(){
+      console.log(element.class);
       if(element.classList.contain("description")){
         element.classList.remove("description");
       }else{
@@ -52,6 +53,7 @@ function initialize(products) {
     e.preventDefault();
     categoryGroup = [];
     finalGroup = [];
+    onDisplay = [];
     // update the record of last category and search term
     if (category.value === 'All') {
       categoryGroup = products.slice();
