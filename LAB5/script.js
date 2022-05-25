@@ -138,7 +138,7 @@ function initialize(products) {
   }
 
   function description(e){
-    if(e.classList.contain('description')){
+    if(e.classList.contains('description')){
       e.classList.remove('description');
     }else{
       e.classList.add('description');
