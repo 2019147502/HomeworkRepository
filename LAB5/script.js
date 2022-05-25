@@ -16,7 +16,6 @@ function initialize(products) {
 
   let categoryGroup;
   let finalGroup;
-  let onDisplay = [];
 
   finalGroup = products.slice();
   updateDisplay();
@@ -38,21 +37,11 @@ function initialize(products) {
       }
     }
   }
-  onDisplay.forEach(function(element){
-    element.onclick = function(e){
-      if(e.target.classList.contain('description')){
-        e.target.classList.remove('description');
-      }else{
-        e.target.classList.add('description');
-      }
-    }
-  });
 
   function selectCategory(e) {
     e.preventDefault();
     categoryGroup = [];
     finalGroup = [];
-    onDisplay = [];
     // update the record of last category and search term
     if (category.value === 'All') {
       categoryGroup = products.slice();
@@ -145,25 +134,14 @@ function initialize(products) {
     section.appendChild(price);
     section.appendChild(image);
 
-    onDisplay.push(section);
+    section.addEventListener("click", description);
   }
 
-  function infiniteScroll(){
-      if(window.innerHeight + window.scrollY >= document.body.offsetHeight){
-        if (finalGroup.length < 6) {
-          const l = finalGroup.length;
-          for (let i = 0;i<l;i++) {
-            const product = finalGroup.shift();
-            fetchBlob(product);
-          }
-        } else {
-          for (let i = 0;i<6;i++) {
-            const product = finalGroup.shift();
-            fetchBlob(product);
-          }
-        }
-      }
+  function description(e){
+    if(e.target.classList.contain('description')){
+      e.target.classList.remove('description');
+    }else{
+      e.target.classList.add('description');
+    }
   }
-
-
 }
