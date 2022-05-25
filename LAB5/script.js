@@ -21,7 +21,7 @@ function initialize(products) {
   let finalGroup;
   let onDisplay = [];
 
-  finalGroup = products;
+  finalGroup = products.slice();
   updateDisplay();
 
   categoryGroup = [];
@@ -38,10 +38,10 @@ function initialize(products) {
     lastCategory = category.value;
     lastSearch = searchTerm.value.trim();
     if (category.value === 'All') {
-      categoryGroup = products;
+      categoryGroup = products.slice();
       selectProducts();
     } else {
-      categoryGroup = products.filter( product => product.type === category.value );
+      categoryGroup = products.slice().filter( product => product.type === category.value );
       selectProducts();
     }
   }
