@@ -17,6 +17,16 @@ nav {
         justify-content: center;
 }
 
+button {
+        background: black;
+        color: white;
+        padding: 5px 0;
+        border: none;
+        border-radius: 10px;
+        box-shadow: inset 1px 1px 2px white, inset -1px -1px 2px #ccc;
+        width: 200px;
+}
+
 div#body{
         border: 5px solid black;
         display: flex;

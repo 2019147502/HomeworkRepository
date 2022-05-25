@@ -11,7 +11,7 @@ fetch('products.json')
 function initialize(products) {
   const category = document.getElementById('category');
   const searchTerm = document.getElementById('searchTerm');
-  const searchBtn = document.querySelector("input[type='submit']");
+  const searchBtn = document.querySelector('button');
   const main = document.getElementById('main');
 
   let lastCategory = category.value;
@@ -24,8 +24,6 @@ function initialize(products) {
   finalGroup = products.slice();
   updateDisplay();
 
-  categoryGroup = [];
-
   searchBtn.addEventListener('click', selectCategory);
   window.onscroll = infiniteScroll();
   onDisplay.forEach(toggle(section));
@@ -35,13 +33,11 @@ function initialize(products) {
     categoryGroup = [];
     finalGroup = [];
     // update the record of last category and search term
-    lastCategory = category.value;
-    lastSearch = searchTerm.value.trim();
     if (category.value === 'All') {
       categoryGroup = products.slice();
       selectProducts();
     } else {
-      categoryGroup = products.slice().filter( product => product.type === category.value );
+      categoryGroup = products.slice().filter( product => product.type == category.value );
       selectProducts();
     }
   }
