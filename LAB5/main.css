@@ -19,6 +19,7 @@ nav {
 
 div#body{
         border: 5px solid black;
+        display: flex;
 }
 
 div#aside{
@@ -38,6 +39,7 @@ section {
         width: 45%; height: 215px;
         margin: 5px;
         position: relative;
+        background-color: black;
         
 }
 
