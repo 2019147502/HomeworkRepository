@@ -47,11 +47,25 @@ section img {
         width: 200px; height: 200px;
         display: block;
         position: absolute;
-        left: 30px;
-        bottom: 30px;
+        left: 50px;
+        bottom: 5px;
+        filter:none;
 }
 
 section h2 {
+        display:none;
+}
+
+section p{
+        display: none;
+}
+
+section.description img {
+        filter: brightness(50%);
+}
+
+
+section.description h2 {
         font-size: 1rem;
         color: yellow;
         text-align: center;
@@ -62,10 +76,10 @@ section h2 {
         line-height: 1rem;
         padding-top: 0.3rem;
         top: 20px;
-        display: none;
+        display:block;
 }
 
-section p {
+section.description p {
         color: yellow;
         background: black;
         width: 50px;
@@ -74,7 +88,7 @@ section p {
         position: absolute;
         top: 50px;
         z-index: 2000;
-        display: none;
+        display:block;
 }
 
 div.intro {

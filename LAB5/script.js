@@ -17,13 +17,14 @@ function initialize(products) {
   let lastCategory = category.value;
   let lastSearch = '';
 
+  let categoryGroup;
   let finalGroup;
   let onDisplay = [];
 
   finalGroup = products;
   updateDisplay();
 
-  finalGroup = [];
+  categoryGroup = [];
 
   searchBtn.addEventListener('click', selectCategory);
   window.onscroll = infiniteScroll();
@@ -33,7 +34,7 @@ function initialize(products) {
     // Use preventDefault() to stop the form submitting — that would ruin
     // the experience
     e.preventDefault();
-
+    categoryGroup = [];
     finalGroup = [];
 
     // if the category and search term are the same as they were the last time a
@@ -46,14 +47,29 @@ function initialize(products) {
       lastCategory = category.value;
       lastSearch = searchTerm.value.trim();
       if (category.value === 'All') {
-        finalGroup = products;
-        updateDisplay();
+        categoryGroup = products;
+        selectProduct();
       } else {
-        finalGroup = products.filter( product => product.type === category.value );
-
-        updateDisplay();
+        categoryGroup = products.filter( product => product.type === category.value );
+        selectProducts();
       }
     }
+  }
+
+  function selectProducts() {
+    // If no search term has been entered, just make the finalGroup array equal to the categoryGroup
+    // array — we don't want to filter the products further.
+    if (searchTerm.value.trim() === '') {
+      finalGroup = categoryGroup;
+    } else {
+      // Make sure the search term is converted to lower case before comparison. We've kept the
+      // product names all lower case to keep things simple
+      const lowerCaseSearchTerm = searchTerm.value.trim().toLowerCase();
+      // Filter finalGroup to contain only products whose name includes the search term
+      finalGroup = categoryGroup.filter( product => product.name.includes(lowerCaseSearchTerm));
+    }
+    // Once we have the final group, update the display
+    updateDisplay();
   }
 
   // start the process of updating the display with the new set of products
