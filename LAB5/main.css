@@ -24,18 +24,18 @@ div#body{
 div#aside{
         padding: 10px;
         border-right: 5px solid black;
-        width: 280px;
+        flex: 3;
 }
 
 div#main{
-        width: 720px;
+        flex:7;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
 }
 
 section {
-        width: 45px; height: 215px;
+        width: 45%; height: 215px;
         margin: 5px;
         position: relative;
         
