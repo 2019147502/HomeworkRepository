@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8">
+        <title>IP Online Shop</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1  class="index">Welcome to INTERNET-PROGRAMMING Online-Shop</h1>
+        <nav>
+            <span class="current nav">메인페이지</span>
+            <a class="nav" href="login.html">로그인</a>
+            <a class="nav" href="signup.html">회원가입</a>
+        </nav>
+        <div id="body">
+            <div id="aside">
+                <form id="categorize">
+                    <div>
+                        <label>Choose a category:</label>
+                        <select id="category">
+                            <option selected>All</option>
+                            <option>CPU</option>
+                            <option>GPU</option>
+                            <option>SSD</option>
+                            <option>Keyboard</option>
+                            <option>Mouse</option>
+                        </select>
+                        </div>
+                        <div>
+                            <label>Enter search term:</label>
+                            <input type="text" id="searchTerm" placeholder="e.g. RTX 3080">
+                        </div>
+                        <div>
+                            <input type="submit" value="Filter results"> 
+                        </div>
+                </form>
+            </div>
+            <div id="main"></div>
+        </div>
+    </body>
+</html>

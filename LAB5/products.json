@@ -1,0 +1,182 @@
+[
+    {
+        "name": "intel i9",
+        "price": 550.0,
+        "image": "intel_i9.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "intel i7",
+        "price": 450.0,
+        "image": "intel_i7.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "intel i5",
+        "price": 180.0,
+        "image": "intel_i5.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "intel i3",
+        "price": 100.0,
+        "image": "intel_i3.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "AMD 5800X",
+        "price": 270.0,
+        "image": "AMD_5800X.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "AMD 5900X",
+        "price": 450.0,
+        "image": "AMD_5900X.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "AMD 5600X",
+        "price": 190.0,
+        "image": "AMD_5600X.jpg",
+        "type": "CPU"
+    },
+    {
+        "name": "RTX 3080 Ti",
+        "price": 1350.0,
+        "image": "RTX_3080_Ti.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "RTX 3070 Ti",
+        "price": 800.0,
+        "image": "RTX_3070_Ti.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "RTX 3060",
+        "price": 450.0,
+        "image": "RTX_3060.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "RTX 3060 Ti",
+        "price": 600.0,
+        "image": "RTX_3060_Ti.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "RADEON RX 6600",
+        "price": 320.0,
+        "image": "RADEON_RX_6600.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "RTX 3080",
+        "price": 950.0,
+        "image": "RTX_3080.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "RTX 3070",
+        "price": 700.0,
+        "image": "RTX_3070.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "GTX 1660",
+        "price": 300.0,
+        "image": "GTX_1660.jpg",
+        "type": "GPU"
+    },
+    {
+        "name": "Samsung 980 M.2 NVMe (500GB)",
+        "price": 60.0,
+        "image": "Samsung_980_NVME.jpg",
+        "type": "SSD"
+    },
+    {
+        "name": "SK P31 M.2 NVMe (1TB)",
+        "price": 135.0,
+        "image": "SK_P31_NVME.jpg",
+        "type": "SSD"
+    },
+    {
+        "name": "Samsung 870 EVO (500GB)",
+        "price": 55.0,
+        "image": "Samsung_870_EVO.jpg",
+        "type": "SSD"
+    },
+    {
+        "name": "Samsung 980 M.2 NVMe (1TB)",
+        "price": 110.0,
+        "image": "Samsung_980_NVME.jpg",
+        "type": "SSD"
+    },
+    {
+        "name": "SK P31 M.2 NVME (500GB)",
+        "price": 65.0,
+        "image": "SK_P31_NVME.jpg",
+        "type": "SSD"
+    },
+    {
+        "name": "Micron Crucial MX500 (500GB)",
+        "price": 55.0,
+        "image": "Micron_Crucial_MX500.jpg",
+        "type": "SSD"
+    },
+    {
+        "name": "Logitech MK295",
+        "price": 32.0,
+        "image": "Logitech_MK295.jpg",
+        "type": "Keyboard"
+    },
+    {
+        "name": "Logitech MK850",
+        "price": 140.0,
+        "image": "Logitech_MK850.jpg",
+        "type": "Keyboard"
+    },
+    {
+        "name": "COX CK87",
+        "price": 50.0,
+        "image": "COX_CK87.jpg",
+        "type": "Keyboard"
+    },
+    {
+        "name": "ABKO HACKER K660",
+        "price": 40.0,
+        "image": "ABKO_HACKER_K660.jpg",
+        "type": "Keyboard"
+    },
+    {
+        "name": "Logitech G304 Wireless",
+        "price": 45.0,
+        "image": "Logitech_G304.jpg",
+        "type": "Mouse"
+    },
+    {
+        "name": "Logitech G102",
+        "price": 20.0,
+        "image": "Logitech_G102.jpg",
+        "type": "Mouse"
+    },
+    {
+        "name": "Logitech G903 Wireless",
+        "price": 150.0,
+        "image": "Logitech_G903.jpg",
+        "type": "Mouse"
+    },
+    {
+        "name": "ASUS ROG CHAKRAM",
+        "price": 175.0,
+        "image": "ASUS_ROG_CHAKRAM.jpg",
+        "type": "Mouse"
+    },
+    {
+        "name": "Razer Viper",
+        "price": 50.0,
+        "image": "Razer_Viper.jpg",
+        "type": "Mouse"
+    }
+]
