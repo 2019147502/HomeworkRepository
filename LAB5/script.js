@@ -130,9 +130,10 @@ function initialize(products) {
     image.alt = product.name;
 
     main.appendChild(section);
+    section.appendChild(image);
     section.appendChild(title);
     section.appendChild(price);
-    section.appendChild(image);
+
 
     section.addEventListener("click", description);
   }
