@@ -23,7 +23,7 @@ function initialize(products) {
 
   searchBtn.addEventListener('click', selectCategory);
   window.onscroll = infiniteScroll();
-  onDisplay.forEach(function toggle(element){
+  onDisplay.forEach(function(element){
     element.onclick = function(){
       if(element.classList.contain("description")){
         element.classList.remove("description");
