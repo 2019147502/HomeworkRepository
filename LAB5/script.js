@@ -39,12 +39,11 @@ function initialize(products) {
     }
   }
   onDisplay.forEach(function(element){
-    element.onclick = function(){
-      console.log(element.class);
-      if(element.classList.contain("description")){
-        element.classList.remove("description");
+    element.onclick = function(e){
+      if(e.target.classList.contain('description')){
+        e.target.classList.remove('description');
       }else{
-        element.classList.add("description");
+        e.target.classList.add('description');
       }
     }
   });
