@@ -31,44 +31,28 @@ function initialize(products) {
   onDisplay.forEach(toggle(section));
 
   function selectCategory(e) {
-    // Use preventDefault() to stop the form submitting — that would ruin
-    // the experience
     e.preventDefault();
     categoryGroup = [];
     finalGroup = [];
-
-    // if the category and search term are the same as they were the last time a
-    // search was run, the results will be the same, so there is no point running
-    // it again — just return out of the function
-    if (category.value === lastCategory && searchTerm.value.trim() === lastSearch) {
-      return;
+    // update the record of last category and search term
+    lastCategory = category.value;
+    lastSearch = searchTerm.value.trim();
+    if (category.value === 'All') {
+      categoryGroup = products;
+      selectProducts();
     } else {
-      // update the record of last category and search term
-      lastCategory = category.value;
-      lastSearch = searchTerm.value.trim();
-      if (category.value === 'All') {
-        categoryGroup = products;
-        selectProduct();
-      } else {
-        categoryGroup = products.filter( product => product.type === category.value );
-        selectProducts();
-      }
+      categoryGroup = products.filter( product => product.type === category.value );
+      selectProducts();
     }
   }
 
   function selectProducts() {
-    // If no search term has been entered, just make the finalGroup array equal to the categoryGroup
-    // array — we don't want to filter the products further.
     if (searchTerm.value.trim() === '') {
       finalGroup = categoryGroup;
     } else {
-      // Make sure the search term is converted to lower case before comparison. We've kept the
-      // product names all lower case to keep things simple
       const lowerCaseSearchTerm = searchTerm.value.trim().toLowerCase();
-      // Filter finalGroup to contain only products whose name includes the search term
       finalGroup = categoryGroup.filter( product => product.name.includes(lowerCaseSearchTerm));
     }
-    // Once we have the final group, update the display
     updateDisplay();
   }
 
@@ -85,9 +69,16 @@ function initialize(products) {
       main.appendChild(para);
     // for each product we want to display, pass its product object to fetchBlob()
     } else {
-      for (let i = 0;i<6;i++) {
-        const product = finalGroup.shift();
-        fetchBlob(product);
+      if (finalGroup.length < 6) {
+        for (let i = 0;i<finalGroup.length;i++) {
+          const product = finalGroup.shift();
+          fetchBlob(product);
+        }
+      } else {
+        for (let i = 0;i<6;i++) {
+          const product = finalGroup.shift();
+          fetchBlob(product);
+        }
       }
     }
   }
@@ -158,14 +149,8 @@ function initialize(products) {
   function toggle(section){
     section.onclick = function(){
       if(section.classList.contain("description")){
-        section.querySelector('img').style.filter = 'none';
-        section.querySelector('h2').style.display = 'none';
-        section.querySelector('p').style.display = 'none';
         section.classList.remove("description");
       }else{
-        section.querySelector('img').style.filter = 'brightness(50%)';
-        section.querySelector('h2').style.display = 'block';
-        section.querySelector('p').style.display = 'block';
         section.classList.add("description");
       }
     }

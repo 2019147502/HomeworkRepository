@@ -24,157 +24,157 @@
         "type": "CPU"
     },
     {
-        "name": "AMD 5800X",
+        "name": "amd 5800x",
         "price": 270.0,
         "image": "AMD_5800X.jpg",
         "type": "CPU"
     },
     {
-        "name": "AMD 5900X",
+        "name": "amd 5900x",
         "price": 450.0,
         "image": "AMD_5900X.jpg",
         "type": "CPU"
     },
     {
-        "name": "AMD 5600X",
+        "name": "amd 5600x",
         "price": 190.0,
         "image": "AMD_5600X.jpg",
         "type": "CPU"
     },
     {
-        "name": "RTX 3080 Ti",
+        "name": "rtx 3080 ti",
         "price": 1350.0,
         "image": "RTX_3080_Ti.jpg",
         "type": "GPU"
     },
     {
-        "name": "RTX 3070 Ti",
+        "name": "rtx 3070 ti",
         "price": 800.0,
         "image": "RTX_3070_Ti.jpg",
         "type": "GPU"
     },
     {
-        "name": "RTX 3060",
+        "name": "rtx 3060",
         "price": 450.0,
         "image": "RTX_3060.jpg",
         "type": "GPU"
     },
     {
-        "name": "RTX 3060 Ti",
+        "name": "rtx 3060 ti",
         "price": 600.0,
         "image": "RTX_3060_Ti.jpg",
         "type": "GPU"
     },
     {
-        "name": "RADEON RX 6600",
+        "name": "radeon rx 6600",
         "price": 320.0,
         "image": "RADEON_RX_6600.jpg",
         "type": "GPU"
     },
     {
-        "name": "RTX 3080",
+        "name": "rtx 3080",
         "price": 950.0,
         "image": "RTX_3080.jpg",
         "type": "GPU"
     },
     {
-        "name": "RTX 3070",
+        "name": "rtx 3070",
         "price": 700.0,
         "image": "RTX_3070.jpg",
         "type": "GPU"
     },
     {
-        "name": "GTX 1660",
+        "name": "gtx 1660",
         "price": 300.0,
         "image": "GTX_1660.jpg",
         "type": "GPU"
     },
     {
-        "name": "Samsung 980 M.2 NVMe (500GB)",
+        "name": "samsung 980 m.2 nvme (500gb)",
         "price": 60.0,
         "image": "Samsung_980_NVME.jpg",
         "type": "SSD"
     },
     {
-        "name": "SK P31 M.2 NVMe (1TB)",
+        "name": "sk p31 m.2 nvme (1tb)",
         "price": 135.0,
         "image": "SK_P31_NVME.jpg",
         "type": "SSD"
     },
     {
-        "name": "Samsung 870 EVO (500GB)",
+        "name": "samsung 870 evo (500gb)",
         "price": 55.0,
         "image": "Samsung_870_EVO.jpg",
         "type": "SSD"
     },
     {
-        "name": "Samsung 980 M.2 NVMe (1TB)",
+        "name": "samsung 980 m.2 nvme (1tb)",
         "price": 110.0,
         "image": "Samsung_980_NVME.jpg",
         "type": "SSD"
     },
     {
-        "name": "SK P31 M.2 NVME (500GB)",
+        "name": "sk p31 m.2 nvme (500gb)",
         "price": 65.0,
         "image": "SK_P31_NVME.jpg",
         "type": "SSD"
     },
     {
-        "name": "Micron Crucial MX500 (500GB)",
+        "name": "micron crucial mx500 (500gb)",
         "price": 55.0,
         "image": "Micron_Crucial_MX500.jpg",
         "type": "SSD"
     },
     {
-        "name": "Logitech MK295",
+        "name": "logitech mk295",
         "price": 32.0,
         "image": "Logitech_MK295.jpg",
         "type": "Keyboard"
     },
     {
-        "name": "Logitech MK850",
+        "name": "logitech mk850",
         "price": 140.0,
         "image": "Logitech_MK850.jpg",
         "type": "Keyboard"
     },
     {
-        "name": "COX CK87",
+        "name": "cox ck87",
         "price": 50.0,
         "image": "COX_CK87.jpg",
         "type": "Keyboard"
     },
     {
-        "name": "ABKO HACKER K660",
+        "name": "abko hacker k660",
         "price": 40.0,
         "image": "ABKO_HACKER_K660.jpg",
         "type": "Keyboard"
     },
     {
-        "name": "Logitech G304 Wireless",
+        "name": "logitech g304 wireless",
         "price": 45.0,
         "image": "Logitech_G304.jpg",
         "type": "Mouse"
     },
     {
-        "name": "Logitech G102",
+        "name": "logitech g102",
         "price": 20.0,
         "image": "Logitech_G102.jpg",
         "type": "Mouse"
     },
     {
-        "name": "Logitech G903 Wireless",
+        "name": "logitech g903 wireless",
         "price": 150.0,
         "image": "Logitech_G903.jpg",
         "type": "Mouse"
     },
     {
-        "name": "ASUS ROG CHAKRAM",
+        "name": "asus rog chakram",
         "price": 175.0,
         "image": "ASUS_ROG_CHAKRAM.jpg",
         "type": "Mouse"
     },
     {
-        "name": "Razer Viper",
+        "name": "razer viper",
         "price": 50.0,
         "image": "Razer_Viper.jpg",
         "type": "Mouse"
