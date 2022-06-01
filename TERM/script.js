@@ -26,7 +26,7 @@ document.getElementById("baseball_list").addEventListener("click", function(e){
     function initialize(list){
         var main = document.getElementById("main");
         let index = 0;
-        if(e.target.value=="0"){
+        if(e.target.class=="0"){
             if (navigator.geolocation) {
                 var latitude = 0;
                 var longitude = 0;
@@ -47,8 +47,8 @@ document.getElementById("baseball_list").addEventListener("click", function(e){
                 return;
             }
         }else{
-            console.log(e.target.value);
-            index = parseInt(e.target.value);
+            console.log(e.target.class);
+            index = parseInt(e.target.class);
         }
         console.log(index);
         console.log(list[index]);
