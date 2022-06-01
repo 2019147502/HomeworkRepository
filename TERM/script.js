@@ -49,7 +49,8 @@ document.getElementById("baseball_list").addEventListener("click", function(e){
         }else{
             index = parseInt(e.target.value);
         }
-
+        console.log(list);
+        console.log(list[index]);
         fetch(list[index].Sit_image)
         .then( response => {
           if (!response.ok) {
