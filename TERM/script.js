@@ -43,13 +43,14 @@ document.getElementById("baseball_list").addEventListener("click", function(e){
                     }
                 }
             }else{
-                x.innerHTML="Failed:Not allowed to get your location"
+                main.innerHTML="Failed:Not allowed to get your location"
                 return;
             }
         }else{
+            console.log(e.target.value);
             index = parseInt(e.target.value);
         }
-        console.log(list);
+        console.log(index);
         console.log(list[index]);
         fetch(list[index].Sit_image)
         .then( response => {
