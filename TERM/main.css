@@ -1,0 +1,11 @@
+body{margin:0 auto; max-width: 800px; display:flex; border: 5px solid black;}
+
+nav {flex:4; display:flex;}
+
+nav.class{flex:4;}
+
+div#main{flex:6;}
+
+p {border:1px solid black;}
+
+div img {width:100%;}
