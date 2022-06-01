@@ -96,6 +96,9 @@ function initialize_f(list){
     document.getElementById("football_list").childNodes.forEach(function(each){
         each.addEventListener("click", function(e){
             var main = document.getElementById("main");
+            while (main.firstChild) {
+                main.removeChild(main.firstChild);
+            }
             let index = 0;
             if(e.target.getAttribute('value')=="0"){
                 if (navigator.geolocation) {
