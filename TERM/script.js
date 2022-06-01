@@ -26,6 +26,9 @@ document.getElementById("baseball_list").childNodes.forEach(function(each){
         
         function initialize(list){
             var main = document.getElementById("main");
+            while (main.firstChild) {
+                main.removeChild(main.firstChild);
+            }
             let index = 0;
             if(e.target.getAttribute('value')=="0"){
                 if (navigator.geolocation) {
@@ -34,6 +37,8 @@ document.getElementById("baseball_list").childNodes.forEach(function(each){
                     navigator.geolocation.getCurrentPosition(function(position){
                         latitude = position.coords.latitude;
                         longitude = position.coords.longitude;
+                        console.log(latitude);
+                        console.log(longitude);
                     });
                     let distance = Math.pow(list[0].Latitude - latitude, 2) + Math.pow(list[0].Longitude - longitude, 2);
                     for(let i=1;i<list.length;i++){
@@ -48,7 +53,7 @@ document.getElementById("baseball_list").childNodes.forEach(function(each){
                     return;
                 }
             }else{
-                index = parseInt(e.target.getAttribute('value'));
+                index = parseInt(e.target.getAttribute('value')) - 1;
             }
 
             const url = `images/${list[index].Sit_image}`;
