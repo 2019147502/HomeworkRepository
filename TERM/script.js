@@ -51,7 +51,8 @@ document.getElementById("baseball_list").childNodes.forEach(function(each){
                 index = parseInt(e.target.getAttribute('value'));
             }
 
-            fetch(list[index].Sit_image)
+            const url = `images/${list[index].Sit_image}`;
+            fetch(url)
             .then( response => {
               if (!response.ok) {
                 throw new Error(`HTTP error: ${response.status}`);

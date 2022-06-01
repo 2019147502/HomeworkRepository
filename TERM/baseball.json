@@ -2,49 +2,49 @@
     {
         "id": 1,
         "name": "잠실야구장",
-        "Sit_image":"/images/b1.jpg",
+        "Sit_image":"b1.jpg",
         "Latitude": 37.5121586067682,
         "Longitude": 127.071880106092
     },
     {
         "id": 2,
         "name": "인천SSG랜더스필드",
-        "Sit_image":"/images/b2.jpg",
+        "Sit_image":"b2.jpg",
         "Latitude": 37.437061843597,
         "Longitude": 126.693309765104
     },
     {
         "id": 3,
         "name": "고척스카이돔",
-        "Sit_image":"/images/b3.jpg",
+        "Sit_image":"b3.jpg",
         "Latitude": 37.4982753160935,
         "Longitude": 126.867122782138
     },
     {
         "id": 4,
         "name": "광주기아챔피언스필드",
-        "Sit_image":"/images/b4.jpg",
+        "Sit_image":"b4.jpg",
         "Latitude": 35.1682452763643,
         "Longitude": 126.889112012585
     },
     {
         "id": 5,
         "name": "대구삼성라이온즈파크",
-        "Sit_image":"/images/b5.jpg",
+        "Sit_image":"b5.jpg",
         "Latitude": 35.8410636868446,
         "Longitude": 128.681654555138
     },
     {
         "id": 6,
         "name": "부산사직야구장",
-        "Sit_image":"/images/b6.jpg",
+        "Sit_image":"b6.jpg",
         "Latitude": 35.1940221188167,
         "Longitude": 129.061541391568
     },
     {
         "id": 7,
         "name": "수원KT위즈파크",
-        "Sit_image":"/images/b7.jpg",
+        "Sit_image":"b7.jpg",
         "Latitude": 37.2997239459473,
         "Longitude": 127.009773173009
     },
@@ -52,14 +52,14 @@
     {
         "id": 8,
         "name": "한화생명이글스파크",
-        "Sit_image":"/images/b8.jpg",
+        "Sit_image":"b8.jpg",
         "Latitude": 36.317103050868,
         "Longitude": 127.429146036827
     },
     {
         "id": 9,
         "name": "창원NC파크",
-        "Sit_image":"/images/b9.jpg",
+        "Sit_image":"b9.jpg",
         "Latitude": 35.2224919973559,
         "Longitude": 128.582180551658
     }

@@ -2,49 +2,49 @@
     {
         "id": 1,
         "name": "서울월드컵경기장",
-        "Sit_image":"/images/f1.jpg",
+        "Sit_image":"f1.jpg",
         "Latitude": 37.5682005661446,
         "Longitude": 126.897339938806
     },
     {
         "id": 2,
         "name": "수원월드컵경기장",
-        "Sit_image":"/images/f2.jpg",
+        "Sit_image":"f2.jpg",
         "Latitude": 37.2865363972255,
         "Longitude": 127.036960165392
     },
     {
         "id": 3,
         "name": "울산문수축구경기장",
-        "Sit_image":"/images/f3.jpg",
+        "Sit_image":"f3.jpg",
         "Latitude": 35.5352704220887,
         "Longitude": 129.259518898574
     },
     {
         "id": 4,
         "name": "제주월드컵경기장",
-        "Sit_image":"/images/f4.jpg",
+        "Sit_image":"f4.jpg",
         "Latitude": 33.2461497777253,
         "Longitude": 126.509369297588
     },
     {
         "id": 5,
         "name": "전주월드컵경기장",
-        "Sit_image":"/images/f5.jpg",
+        "Sit_image":"f5.jpg",
         "Latitude": 35.8680257405717,
         "Longitude": 127.064469745269
     },
     {
         "id": 6,
         "name": "인천축구전용경기장",
-        "Sit_image":"/images/f6.jpg",
+        "Sit_image":"f6.jpg",
         "Latitude": 37.4660997644701,
         "Longitude": 126.642996644145
     },
     {
         "id": 7,
         "name": "포항스틸야드",
-        "Sit_image":"/images/f7.jpg",
+        "Sit_image":"f7.jpg",
         "Latitude": 35.9977074690712,
         "Longitude": 129.384412531017
     },
@@ -52,35 +52,35 @@
     {
         "id": 8,
         "name": "DGB대구은행파크",
-        "Sit_image":"/images/f8.jpg",
+        "Sit_image":"f8.jpg",
         "Latitude": 35.8813022424283,
         "Longitude": 128.588102570603
     },
     {
         "id": 9,
         "name": "수원종합운동장",
-        "Sit_image":"/images/f9.jpg",
+        "Sit_image":"f9.jpg",
         "Latitude": 37.2977505337729,
         "Longitude": 127.011357562726
     },
     {
         "id": 10,
         "name": "김천종합운동장",
-        "Sit_image":"/images/f9.jpg",
+        "Sit_image":"f9.jpg",
         "Latitude": 36.1396743935375,
         "Longitude": 128.086420999347
     },
     {
         "id": 11,
         "name": "강릉종합운동장",
-        "Sit_image":"/images/f9.jpg",
+        "Sit_image":"f9.jpg",
         "Latitude": 37.7736937727731,
         "Longitude": 128.897580532573
     },
     {
         "id": 12,
         "name": "탄천종합운동장",
-        "Sit_image":"/images/f9.jpg",
+        "Sit_image":"f9.jpg",
         "Latitude": 37.4101642208818,
         "Longitude": 127.12131304198
     }
