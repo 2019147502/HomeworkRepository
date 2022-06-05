@@ -78,6 +78,9 @@ function initialize_b(list){
                     option.style.color = list[index].Sits[i][1];
                     selection.appendChild(option);
                 }
+                const submit = document.createElement('button');
+                submit.innerHTML = '좌석이미지 불러오기';
+                form.appendChild(submit);
                 form.appendChild(selection);
 
     
