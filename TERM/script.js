@@ -79,6 +79,18 @@ function initialize_b(list){
                     selection.appendChild(option);
                 }
                 const submit = document.createElement('button');
+                submit.onclick = function(){
+                    
+                    fetch('https://maps.googleapis.com/maps/api/streetview?pano=h85r1TZ7eSFhqYG47&size=456x456&key=AIzaSyCMZ8_8UqfDh6qP98b3vXR2kKPxu6srErk')
+                    .then(response => {
+                        if (!response.ok){
+
+                        }
+                        return response.blob();
+                    })
+                    .then( blob => show_img(blob))
+                    .catch( err => console.error(`Fetch problem: ${err.message}`) );
+                }
                 submit.innerHTML = '좌석이미지 불러오기';
                 form.appendChild(submit);
                 form.appendChild(selection);
@@ -95,6 +107,13 @@ function initialize_b(list){
             }
         });
     });
+}
+
+function show_img(blob){
+    const main = document.getElementById("main");
+    const image = document.createElement('img');
+    image.src = blob;
+    main.appendChild(image);
 }
 
 fetch('football.json')
