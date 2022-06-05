@@ -73,9 +73,9 @@ function initialize_b(list){
                 const selection = document.createElement('select');
                 for(let i=0;i<list[index].Sits.length;i++){
                     let option = document.createElement('option');
-                    option.innerHTML = list[index].Sits[0];
-                    option.setAttribute("value", list[index].Sits[0]);
-                    option.style.color = list[index].Sits[1];
+                    option.innerHTML = list[index].Sits[i][0];
+                    option.setAttribute("value", list[index].Sits[i][0]);
+                    option.style.color = list[index].Sits[i][1];
                     selection.appendChild(option);
                 }
                 form.appendChild(selection);
@@ -88,7 +88,7 @@ function initialize_b(list){
                 
                 main.appendChild(heading);
                 main.appendChild(image);
-                main.appendChild(form);
+                main.appendChild(form)
             }
         });
     });
