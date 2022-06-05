@@ -4,7 +4,8 @@
         "name": "잠실야구장",
         "Sit_image":"b1.jpg",
         "Latitude": 37.5121586067682,
-        "Longitude": 127.071880106092
+        "Longitude": 127.071880106092,
+        "Sits": [["블루석", "skyblue"], ["레드석", "red"], ["네이비석", "navy"], ["외야석", "green"], ["테이블석", "purple"], ["VIP석", "blue"]]
     },
     {
         "id": 2,
